@@ -1,4 +1,4 @@
-python inference.py \
+CUDA_VISIBLE_DEVICES='6' python inference.py \
     --prompt "A striking mallard floats effortlessly on the sparkling pond." \
     --condition "depth_midas" \
     --video_path "data/mallard-water.mp4" \
@@ -8,5 +8,5 @@ python inference.py \
     --width 512 \
     --height 512 \
     --frame_rate 2 \
-    --version v10 \
+    --version v10
     # --is_long_video

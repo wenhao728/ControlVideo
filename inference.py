@@ -19,12 +19,13 @@ from models.RIFE.IFNet_HDv3 import IFNet
 
 
 device = "cuda"
-sd_path = "checkpoints/stable-diffusion-v1-5"
+# sd_path = "checkpoints/stable-diffusion-v1-5"
+sd_path = "/data/models/stable-diffusion-v1-5"
 inter_path = "checkpoints/flownet.pkl"
 controlnet_dict_version = {
     "v10":{
         "openpose": "checkpoints/sd-controlnet-openpose",
-        "depth_midas": "checkpoints/sd-controlnet-depth",
+        "depth_midas": "/data/models/control_v11f1p_sd15_depth",
         "canny": "checkpoints/sd-controlnet-canny",
     },
     "v11": {
@@ -37,10 +38,15 @@ controlnet_dict_version = {
     "lineart_anime": "checkpoints/control_v11p_sd15_lineart_anime",
     "lineart_coarse": "checkpoints/control_v11p_sd15_lineart",
     "lineart_realistic": "checkpoints/control_v11p_sd15_lineart",
-    "depth_midas": "checkpoints/control_v11f1p_sd15_depth",
-    "depth_leres": "checkpoints/control_v11f1p_sd15_depth",
-    "depth_leres++": "checkpoints/control_v11f1p_sd15_depth",
-    "depth_zoe": "checkpoints/control_v11f1p_sd15_depth",
+    # "depth_midas": "checkpoints/control_v11f1p_sd15_depth",
+    # "depth_leres": "checkpoints/control_v11f1p_sd15_depth",
+    # "depth_leres++": "checkpoints/control_v11f1p_sd15_depth",
+    # "depth_zoe": "checkpoints/control_v11f1p_sd15_depth",
+    "depth_midas": "/data/models/control_v11f1p_sd15_depth",
+    "depth_leres": "/data/models/control_v11f1p_sd15_depth",
+    "depth_leres++": "/data/models/control_v11f1p_sd15_depth",
+    "depth_zoe": "/data/models/control_v11f1p_sd15_depth",
+
     "canny": "checkpoints/control_v11p_sd15_canny",
     "openpose": "checkpoints/control_v11p_sd15_openpose",
     "openpose_face": "checkpoints/control_v11p_sd15_openpose",
